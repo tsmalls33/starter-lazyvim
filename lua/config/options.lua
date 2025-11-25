@@ -6,3 +6,6 @@ vim.schedule(function()
 end)
 
 vim.o.scrolloff = 10
+
+-- Semantic highlighting
+vim.g.lazyvim_semantic_highlighting = false
