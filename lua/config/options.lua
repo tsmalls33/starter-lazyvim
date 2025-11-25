@@ -9,3 +9,10 @@ vim.o.scrolloff = 10
 
 -- Semantic highlighting
 vim.g.lazyvim_semantic_highlighting = false
+
+-- Kill any orphaned tsserver processes when Neovim exits
+vim.api.nvim_create_autocmd("ExitPre", {
+  callback = function()
+    vim.fn.system("pkill -f 'tsserver.js'")
+  end,
+})
