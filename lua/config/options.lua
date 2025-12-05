@@ -9,6 +9,7 @@ vim.o.scrolloff = 10
 
 -- Semantic highlighting
 vim.g.lazyvim_semantic_highlighting = false
+vim.g.lazyvim_prettier_needs_config = false
 
 -- Kill any orphaned tsserver processes when Neovim exits
 vim.api.nvim_create_autocmd("ExitPre", {
